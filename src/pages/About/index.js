@@ -1,12 +1,12 @@
 import React from 'react'
-
+import HeroPic from '../../components/HeroPic'
 
 function About() {
-    return(
-    <>
-    
-    </>
+    return (
+        <>
+        <HeroPic text="Andrew Bergstrom" />
+        </>
     )
-    }
-    
-    export default About;
+}
+
+export default About;
