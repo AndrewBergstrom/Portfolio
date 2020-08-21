@@ -1,10 +1,10 @@
 import React from 'react'
-import{ Card, CardDeck} from 'react-bootstrap'
+import{ Card, CardDeck, Container} from 'react-bootstrap'
 import './style.css'
 
 function Portfolio() {
     return (
-        <div className='cards'>
+        <Container className='cards'>
             <CardDeck>
                 <Card>
                     <Card.Img variant="top" src="holder.js/100px160" />
@@ -47,7 +47,7 @@ function Portfolio() {
                     </Card.Footer>
                 </Card>
             </CardDeck>
-        </div>
+        </Container>
     )
 }
 

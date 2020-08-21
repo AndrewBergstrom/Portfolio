@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import{ Container} from 'react-bootstrap'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -11,11 +12,11 @@ import NotFound from './pages/NotFound'
 
 function App() {
   return (
-    <>
+   
       <Router>
         <main id="main-page">
           <Navbar  sticky="top"/>
-
+          
           <Switch>
 
             <Route exact path="/">
@@ -35,11 +36,11 @@ function App() {
             </Route>
 
           </Switch>
+          
 
         </main>
       </Router>
-    </>
-
+    
   );
 }
 
