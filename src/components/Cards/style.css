@@ -1,0 +1,21 @@
+
+.portfolio-cards {
+    border-color: #111111;
+    box-shadow: 1px 1px 10px;
+    border-style: solid;
+    background: linear-gradient(to left, #489793, rgb(233, 227, 223));
+    border-radius: 3px;
+}
+
+.card-title, .card-text {
+    color:black;
+}
+
+.btn {
+    color:black;
+    background: linear-gradient(to right, rgb(0, 230, 161), #33AEFF);
+    box-shadow: 1px 1px 10px;
+    border-color: #324159;
+    margin: 5px; 
+    border-radius: 120px;
+}

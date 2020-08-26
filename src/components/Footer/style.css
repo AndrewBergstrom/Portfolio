@@ -1,19 +1,13 @@
-/* Sticky Footer Classes */
+
 html,
 body {
   height: 100%;
 }
 
-
 #sticky-footer, .stickyFooter {
   flex-shrink: 0;
   position: fixed;
   width: 100vw;
+
 }
 
-/* Other Classes for Page Styling */
-
-body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
-}

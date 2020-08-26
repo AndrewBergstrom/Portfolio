@@ -1,55 +1,28 @@
 import React from 'react'
-import{ Card, CardDeck, Container} from 'react-bootstrap'
+import Cards from '../../components/Cards'
 import './style.css'
 
-
-function Portfolio() {
+ function Portfolio() {
     return (
-        <Container fluid >
-            <CardDeck>
-                <Card>
-                    <Card.Img variant="top" className="cardImg1" />
-                    <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
-                    </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This card has supporting text below as a natural lead-in to additional
-                         content.{' '}
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
-                    </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-            </CardDeck>
-        </Container>
+        <div className='container portfolioPage'>
+            <div className='Projects text-center'><h1>My Projects</h1></div>
+       
+        <div className="row justify-content-center">
+
+            <Cards img='./images/guideme.jpg' title="GuideMe" description="Created with React, GuideMe redefines traveling as we know it. Our goal was to create a streamlined service that connects modern day travelers with guides who can provide unique experiences." github="https://github.com/domjparker/GuideMe-FE" applink="https://guidemedimma.herokuapp.com/" />
+
+            <Cards img='./images/flipit.jpg' title="FlipIt" description="FlipIt is an easy to use note card study application. I was part of the back-end development team and was in charge of API routes, setting up the server, and writing models while also adding animation/css styling to the notecards." github="https://github.com/AychDubya/Flipit" applink="https://flipitstudy.herokuapp.com/" />
+
+            <Cards img='./images/wander.jpg' title="Work Day Scheduler" description="Wander is my first group project. We created a random hike finder app and for those that perfer choices, there is a hiking list page for them." github="https://github.com/CodySamuels/wander" applink="https://codysamuels.github.io/wander/" />
+
+            <Cards img='./images/budgettracker.jpg' title="Budget Tracker" description="This is an easy to use budget tracking tool.  Enter the name of your transaction, then enter the dollar amount and select either add funds or subtract funds." github="https://github.com/AndrewBergstrom/Budget-Tracker" applink="https://bug-snaxzz.herokuapp.com/" />
+
+            <Cards img='./images/employeedirectory.jpg' title="Employee Directory" description="" github="https://github.com/AndrewBergstrom/React-Employee-Directory" applink="https://huanui-inc.herokuapp.com/" />
+
+            <Cards img='./images/scheduler.jpg' title="Work Day Scheduler" description="This is a day planner to keep you organized hour by hour. It highlights gray if the time has passed, red for the current time and green for the future." github="https://github.com/AndrewBergstrom/scheduler" applink="https://andrewbergstrom.github.io/scheduler/" />
+        </div>
+       
+        </div>
     )
 }
-
-export default Portfolio;
+export default Portfolio; 
