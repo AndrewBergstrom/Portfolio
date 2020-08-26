@@ -2,12 +2,13 @@ import React from 'react'
 import{ Card, CardDeck, Container} from 'react-bootstrap'
 import './style.css'
 
+
 function Portfolio() {
     return (
-        <Container className='cards'>
+        <Container fluid >
             <CardDeck>
                 <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card.Img variant="top" className="cardImg1" />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
                         <Card.Text>
