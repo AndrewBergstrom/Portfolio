@@ -38,6 +38,7 @@ function App() {
           
       
         </main>
+        
         <Footer />
       </Router>
     

@@ -4,20 +4,20 @@ import './style.css'
 
 
 
-function Cards(props) {
+function AboutMeCard(props) {
     return (
-        <div className="col-sm-4 mt-4">
+        <div className="col-sm-6 mt-4">
         <div className="card portfolio-cards">
             <img src={props.img} className="card-img-top" alt={props.title}/>
             <div className="card-body text-center">
                 <h6 className="card-title">{props.title}</h6>
                 <p className="card-text">{props.description}</p>
                 <a href={props.github} className="btn btn-dark" target="_blank" rel="noopener noreferrer">GitHub </a>
-                <a href={props.applink} className="btn btn-dark" target="_blank" rel="noopener noreferrer">Project Link</a>
+                <a href={props.linkedin} className="btn btn-dark" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
         </div>
     </div>
     )
 }
 
-export default Cards;
+export default AboutMeCard;

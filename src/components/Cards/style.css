@@ -5,6 +5,7 @@
     border-style: solid;
     background: linear-gradient(to left, #489793, rgb(233, 227, 223));
     border-radius: 3px;
+    margin-bottom: 100px;
 }
 
 .card-title, .card-text {
