@@ -3,30 +3,22 @@ import './style.css'
 
 
 
-function ContactForm() {
+function ContactForm(props) {
 
     return (
-        <>
-        <div className='container contactform col-sm-6 mt-5'>
-            <form id="contact-form" >
-                <div className="form-group">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" className="form-control" />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">Email address</label>
-                    <input type="email" className="form-control"  />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Message</label>
-                    <textarea className="form-control" rows="5"></textarea>
-                </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
-            </form>
+        <div className="col-sm-4 mt-4">
+        <div className="card portfolio-cards">
+       
+            <div className="card-body text-center">
+                <h6 className="card-title">{props.title}</h6>
+                <a href="mailto:andrew.bergstrom88@gmail.com" target="_blank" rel="noopener noreferrer">andrew.bergstrom88@gmail.com</a>
+               <br></br>
+                {/* <a href={props.applink} className="btn btn-dark" target="_blank" rel="noopener noreferrer">Resumé</a> */}
+            </div>
         </div>
-        </>
-
+    </div>
     )
+
 }
 
 export default ContactForm;
